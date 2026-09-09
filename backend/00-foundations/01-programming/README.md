@@ -56,17 +56,26 @@ For now:
 
 ## Where This Fits
 
-`01-programming/` is the first substantial track inside `00-foundations/`, coming right after initial setup and orientation. There isn't much to formally complete before it, but you should already be comfortable:
+`01-programming/` is the first substantial track inside `00-foundations/`.
+
+### Assumptions & Prerequisites
+
+No formal programming experience is required. If you've been vibe coding, you already know how to open an IDE and hit "Run". You just haven't had to do the actual thinking yourself yet.
+
+I assume you have the basic tooling ready:
+
+- **Python installed** on your machine;
+- **An IDE or basic text editor** (VS Code recommended);
+- **The ability to run a program file** (either directly inside your editor or from the command line).
+
+You should also be comfortable with basic computer tasks:
 
 - opening a terminal
-- creating and running files
 - navigating directories
-- using a basic text editor OR an Integrated Development Environment (IDE). Vscode recommended.
+- creating and running files
 - reading simple command output
 
-No previous programming experience is required. This section exists precisely because you don't need any yet. 
-
-Familiarize yourself with an IDE before beginning.
+Familiarize yourself with your chosen IDE or text editor before beginning.
 
 ---
 
