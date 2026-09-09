@@ -4,6 +4,14 @@
 
 > **Fundamental**
 
+## Learn the Syntax
+
+This doc explains why operators and precedence matter, not the full list of symbols Python supports. For that side:
+
+- **[W3Schools: Python Operators](https://www.w3schools.com/python/python_operators.asp)**, every operator with a runnable example, good for a first pass
+- **[Real Python: Operators and Expressions in Python](https://realpython.com/python-operators-expressions/)**, a deeper walkthrough covering precedence and edge cases
+- **[Official docs: Expressions](https://docs.python.org/3/reference/expressions.html)**, the authoritative reference, including the full precedence table
+
 ## The Question
 
 How does a program compute new values from existing ones?

@@ -4,6 +4,14 @@
 
 > **Fundamental**
 
+## Learn the Syntax
+
+This doc explains why types matter, not every syntax detail of Python's type system. For that side:
+
+- **[W3Schools: Python Data Types](https://www.w3schools.com/python/python_datatypes.asp)**, quick, interactive, good for a first pass
+- **[Real Python: Basic Data Types in Python](https://realpython.com/python-data-types/)**, a slower, more thorough walkthrough if W3Schools moves too fast
+- **[Official docs: Built-in Types](https://docs.python.org/3/library/stdtypes.html)**, the authoritative reference for every type and what you can do with it
+
 ## The Question
 
 How does Python know what kind of value it's working with?
