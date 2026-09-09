@@ -122,7 +122,7 @@ This is the founding constraint of Unslop as a whole.
 - debug a problem before you've investigated it yourself
 - rewrite your entire program when it fails
 
-This training constraint exists because cognitive outsourcing, letting a model do the reasoning before you've built the underlying skill, makes you better at prompting, not at programming. Build the competence here, first, while the problems are still small enough to hold in your head. See the [project README](../../README.md) for the reasoning and research behind this rule.
+This training constraint exists because cognitive outsourcing, letting a model do the reasoning before you've built the underlying skill, makes you better at prompting, not at programming. Build the competence here, first, while the problems are still small enough to hold in your head. See the [project README](../../../README.md) for the reasoning and research behind this rule.
 
 ---
 
