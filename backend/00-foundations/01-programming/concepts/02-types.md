@@ -49,7 +49,7 @@ Every field in a real database, every response from a real API, has a declared t
 | `bool`     | `True` / `False` | A yes or no value, like whether an item is in stock |
 | `NoneType` | `None`             | The absence of a value                              |
 
-You'll meet more complex types, lists and dictionaries, etc. For now, focus on these five.
+You'll meet more complex types in the [collections lesson](07-collections.md), starting with lists and tuples. For now, focus on these five.
 
 ---
 

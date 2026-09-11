@@ -78,7 +78,7 @@ You don't always need an explicit comparison. Python treats some values as autom
 | ---------------------------------- | ---------- |
 | `0`, `0.0`                     | `False`  |
 | `""` (empty string)              | `False`  |
-| `[]`, `{}` (empty collections) | `False`  |
+| [`[]`](07-collections.md) (an empty list), `{}` (an empty dictionary) | `False`  |
 | `None`                           | `False`  |
 | anything else                      | `True`   |
 

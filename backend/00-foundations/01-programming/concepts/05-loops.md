@@ -29,7 +29,7 @@ for day in range(7):
 
 This prints `0` through `6`, one number for each day of a week's sales.
 
-You can also loop directly over a collection:
+You can also loop directly over a [collection](07-collections.md), such as a list:
 
 ```python
 products = ["Rice bag", "Cooking oil", "Sugar"]
@@ -38,7 +38,7 @@ for product in products:
     print(product)
 ```
 
-Each pass through the loop, `product` refers to the next item in the list, the same way a shop clerk goes down a shelf checking one item after another.
+Each pass through the loop, `product` refers to the next item in the list, the same way a shop clerk goes down a shelf checking one item after another. See the [collections lesson](07-collections.md) for how lists store, access, and change values.
 
 ---
 
@@ -170,7 +170,7 @@ Before running it, predict what will print for both the total and the average.
 
 A shop tracks stock quantities for its products. Write a program that:
 
-1. Loops through a list of `(product_name, quantity)` pairs.
+1. Loops through a list of [`(product_name, quantity)` pairs](07-collections.md#tuples).
 2. Prints `"REORDER: {product_name}"` for anything at or below a threshold of 5.
 3. Counts and prints how many products need reordering in total.
 
