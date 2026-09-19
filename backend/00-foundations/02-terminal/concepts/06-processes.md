@@ -10,53 +10,60 @@ What is a process, and how is it different from the program that started it?
 
 ---
 
-## A Program, Running
+## A program becomes a process when it starts running
 
-A program is code stored somewhere. A process is that program while it's running, with its own space in memory, its own current state, its own place in the operating system's attention.
+A program is a file on disk. It is code, but it is not alive in the way a running application is alive.
 
-Run the same program twice, and you get two separate processes. They came from the identical file, but once running, they know nothing about each other. Each one has its own memory, its own variables, its own life.
+A process is the running version of that program. It has its own place in memory, its own current values, and its own lifetime while the operating system is executing it.
+
+If you run the same program twice, you get two processes. They started from the same file, but they are not the same running instance. They each have their own memory and their own state.
 
 ```mermaid
 flowchart TD
-    A["till-calculator/main.py"] --> B["Process 1"]
+    A["Same program file"] --> B["Process 1"]
     A --> C["Process 2"]
 ```
 
-Open two terminal windows and run the same shop program in both at once, and that's exactly what you get, two independent processes, tracking their own separate order totals, unaware the other one even exists.
+That is why two terminal windows can both run the same shop program and each one keeps its own order totals, variables, and progress without interfering with the other.
 
 ---
 
-## Your Computer Is Juggling Many at Once
+## Your computer is managing many processes at once
 
-Your terminal itself is a process. Your browser is a process, or several. The moment you ran `python main.py`, that became one more process alongside all the others your operating system is already keeping track of. Every process eventually ends, either because the program finishes what it was doing on its own, or because something stops it early.
+The shell itself is a process. Your editor is a process. Your browser is a process. When you run `python main.py`, that becomes one more process alongside all the others already running.
 
-Keep this doc's scope narrow on purpose, exactly how the operating system schedules and juggles all of these at once is a deeper topic for later. What matters right now is the basic shape: a running program is a distinct, trackable thing with its own identity, separate from the file it came from.
+Every process eventually ends. It may finish on its own, or it may be stopped by something else. The key point is that each process is a separate live instance of a program, not just a copy of the file sitting on disk.
 
----
-
-## Where This Shows Up
-
-A web server, covered later in Unslop, is a process kept running on purpose, sitting and waiting to answer request after request rather than finishing and exiting the way your shop programs did. Identifying which process is which, and stopping one that's misbehaving without disturbing anything else, becomes a routine skill the moment real servers enter the picture. `tools/04-inspecting-processes.md` covers exactly how to look at what's currently running and stop it, this doc is just the mental model that makes those commands make sense.
+This concept matters because real systems rarely have only one thing running. Once you move beyond toy exercises, your computer is constantly scheduling many tasks, and process management becomes a normal debugging skill.
 
 ---
 
-## Try It
+## Where this shows up in real work
 
-Open two terminal windows side by side. Run the same shop program in both at the same time. Watch them print output independently, on their own schedule, with no coordination between them at all.
+A web server is usually a process that stays alive for a long time and waits for requests. It does not simply run once and exit. A debugging session often involves identifying which process is doing what, which one is stuck, and which one you should stop without affecting the others.
+
+The commands for inspecting and ending processes are covered later in `tools/`. This chapter is simply the mental model behind them.
 
 ---
 
-## What You Need to Understand
+## Try it
 
-- a program is a file, a process is that program actively running
-- running the same program twice creates two separate, independent processes
-- every process eventually ends, on its own or from an outside stop
+Open two terminal windows side by side. Run the same shop program in both. Then notice that they run independently, each with their own output and their own state, even though they came from the same source file.
+
+---
+
+## What you need to understand
+
+- a program is code on disk
+- a process is that program while it is actively running
+- starting the same program twice creates two separate processes with separate memory
+- processes end when the program finishes or is interrupted
 
 ---
 
 ## Exercise
 
-Run the same program in two terminal windows at once. Write down what you'd expect to happen to the second one if the first crashed partway through. Then think about why that expectation follows from what a process actually is.
+Run the same program in two terminal windows at once. Write down what you expect to happen if the first process crashes midway through. Then explain why that expectation makes sense based on what a process actually is.
 
 ---
 
@@ -64,6 +71,6 @@ Run the same program in two terminal windows at once. Write down what you'd expe
 
 Explain, in your own words:
 
-1. What's the difference between a program and a process?
-2. If you run the same program three times at once, how many separate processes exist, and do they share any state?
-3. Why would crashing one process have no effect on a separate process running the same program?
+1. What is the difference between a program and a process?
+2. If you run the same program three times at once, how many separate processes exist, and do they share state?
+3. Why does a crash in one process not automatically affect another process running the same program?
