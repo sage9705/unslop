@@ -36,9 +36,9 @@ A command usually has two parts: the name of the program you want to run, and an
 python main.py
 ```
 
-`python3` is the program being run. `main.py` is an argument, extra information passed to that program so it knows exactly what to do, in this case, which file to execute.
+`python` is the program being run. `main.py` is an argument, extra information passed to that program so it knows exactly what to do, in this case, which file to execute.
 
-You already wrote and ran dozens of these throughout `01-programming`. Every `python3 main.py` you ran there followed this same shape.
+You already wrote and ran dozens of these throughout `01-programming`. Every `python main.py` you ran there followed this same shape.
 
 ---
 
@@ -88,5 +88,5 @@ Pick three commands you already ran during `01-programming`, running a Python fi
 Explain, in your own words:
 
 1. What's the difference between the terminal and the shell?
-2. In `python3 main.py`, which part is the command and which part is the argument?
+2. In `python main.py`, which part is the command and which part is the argument?
 3. What does the shell actually do when it can't find a command you typed?
