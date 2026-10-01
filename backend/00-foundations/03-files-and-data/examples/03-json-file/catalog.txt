@@ -1,0 +1,3 @@
+Rice bag,25.50,40
+Sugar,12.75,30
+Cooking oil,18.00,15
