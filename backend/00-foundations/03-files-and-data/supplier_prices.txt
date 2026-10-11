@@ -1,0 +1,9 @@
+# Supplier price list, March
+Rice bag | 24.00 | bag
+Sugar | 11.50 | kg
+Cooking oil | -16.00 | litre
+ Flour | 13.25 | kg 
+
+Bread | free | loaf
+Salt | 3.20
+Tomato paste | 6.75 | tin
